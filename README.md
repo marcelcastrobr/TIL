@@ -6,12 +6,12 @@ Today-I-Learned snippets. Inspired by the post [Building a self-updating profile
 <!-- index starts -->
 ## sql
 
-* [Basic MapReduce Understanding](https://github.com/vidyabhandary/til/blob/main/sql/map_reduce.md) - 2022-10-12
-* [Declarative Language vs Imperative Language](https://github.com/vidyabhandary/til/blob/main/sql/DeclarativeVsImperative.md) - 2022-10-12
+* [Basic MapReduce Understanding](https://github.com/marcelcastrobr/til/blob/main/sql/map_reduce.md) - 2022-10-12
+* [Declarative Language vs Imperative Language](https://github.com/marcelcastrobr/til/blob/main/sql/DeclarativeVsImperative.md) - 2022-10-12
 
 ## scripts
 
-* [Mini scripts bat file](https://github.com/vidyabhandary/til/blob/main/scripts/script_create_open_folders.md) - 2022-10-12
+* [Mini scripts bat file](https://github.com/marcelcastrobr/til/blob/main/scripts/script_create_open_folders.md) - 2022-10-12
 <!-- index ends -->
 
 ---
