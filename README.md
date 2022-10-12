@@ -2,7 +2,7 @@
 
 Today-I-Learned snippets. Inspired by [vidyabhandary](https://github.com/vidyabhandary), which was inspired by the post [Building a self-updating profile README for GitHub](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/) by [Simon Willison](https://github.com/simonw) 
 
-<!-- count starts -->3<!-- count ends --> TILs so far. 
+<!-- count starts -->4<!-- count ends --> TILs so far. 
 <!-- index starts -->
 ## sql
 
@@ -12,6 +12,10 @@ Today-I-Learned snippets. Inspired by [vidyabhandary](https://github.com/vidyabh
 ## scripts
 
 * [Mini scripts bat file](https://github.com/marcelcastrobr/til/blob/main/scripts/script_create_open_folders.md) - 2022-10-12
+
+## ml
+
+* [Random Cut Forest](https://github.com/marcelcastrobr/til/blob/main/ml/random_cut_forest.md) - 2022-10-12
 <!-- index ends -->
 
 ---
