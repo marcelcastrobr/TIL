@@ -2,7 +2,7 @@
 
 
 
-Maintenance of application over time can be challenge in special from the **data format** point of view, as both **backward** compatibility (i.e. newer code reading data that was written by older code ) and **forward** compatibility (i.e. older code reading data that was written by newer code) might be needed.
+Maintenance of application over time can be challenge in special from the **data format** point of view, as both **backward** compatibility (i.e. newer code reading data that was written by older code ) and **forward** compatibility (i.e. older code reading data that was written by newer code) is important.
 
 Your code normally works with data in two representations:
 
@@ -16,17 +16,17 @@ A translation mechanism is needed for applications to work with those two repres
 
 JSON ,XML and CSV are well-known textual formats used. Despite its problems such as  ambiguity around encoding of numbers, lack of binary string support, and use or lack of schema support [1], they are still relevant and widely used.
 
-**Binary encoring** can be used to optimize store usage, such as MessagePack and BJSON and WBXML. **Apache Thrift** and **Google Protocol Buffers** are also binary encoding libraries that make use of a schema definition in order to optimize the encoding. At a high level, by using a schema definition both Thrift and  Protocol Buffers do not need to encode the field names, instead they use **field tags** (i.e. alias for the field names) in the form of numbers which appear in the schema definition.
+**Binary encoding** can be used to optimize storage usage, such as MessagePack, BJSON and WBXML. **Apache Thrift** and **Google Protocol Buffers** are also binary encoding libraries that make use of a schema definition in order to optimize the encoding. At a high level, by using a schema definition both Thrift and  Protocol Buffers do not need to encode the field names, instead they use **field tags** (i.e. alias for the field names) in the form of numbers which appear in the schema definition.
 
 Field tags allows schema evolution, as you can:
 
 - Change the name of a field in the schema as the encoded data does not refer to the field name but field tag.
 - Add new fields to the schema using a new tag number. This allow for backward compatibility since "old application" would only ignore the new field tag. 
-- Add new fields as optional (i.e. nor required) allowing both forward and backward compatibility. 
+- Add new fields as optional (i.e. not required) allowing both forward and backward compatibility. 
 
 
 
-**Apache Avro** is another binary encoding format started as a subproject of Hadoop. Avro makes use of two schema languages: There is no field tags in the Avro schema, instead it uses the concept of **writer and reader schema**. A mismatch between reader and writer will mean incorrectly decoded data.
+**Apache Avro** is another binary encoding format started as a subproject of Hadoop. There is no field tags in the Avro schema, instead it uses the concept of **writer and reader schema**. A mismatch between reader and writer will mean incorrectly decoded data.
 
 In Avro, the reader and writer schema do not need to be the same, but only need to be compatible. The compatibility is achieved by a simple schema translation from writer to reader schemas. This allow schemas with field in different order or even lack of fields.
 
