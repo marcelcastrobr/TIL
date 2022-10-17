@@ -30,7 +30,7 @@ Field tags allows schema evolution, as you can:
 
 In Avro, the reader and writer schema do not need to be the same, but only need to be compatible. The compatibility is achieved by a simple schema translation from writer to reader schemas. This allow schemas with field in different order or even lack of fields.
 
-In Avro, forward compatibility means a new version of writer schema and old version of reader. While in backward compatibility, you have a new version of the reader schema and an old version of the writer schema. Thus to maintain compatibility you add and remove a field with a default value. This allow a new  schema reader to fill missing field with default value from records written by old schema writers.  
+In Avro, forward compatibility means a new version of writer schema and old version of reader. While in backward compatibility, you have a new version of the reader schema and an old version of the writer schema. Thus to maintain compatibility you to add fields with a default value. This allow a new  schema reader to fill a missing field with the default value from records written by an old schema writers.  
 
 
 
