@@ -13,7 +13,7 @@ WSL2 is the default distro that runs as isolated containers inside the WSL2 mana
 
 
 
-**Basic commands**
+## **Basic commands**
 
 Install WSL
 
@@ -59,5 +59,56 @@ Create your virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 deactivate
+```
+
+
+
+## Docker on WSL2
+
+Steps following the installtion option through apt repository. Other installation options can be found here](https://docs.docker.com/engine/install/ubuntu/)
+
+**Setup docker apt repos:**
+
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+```
+
+
+
+**Install latest version:**
+
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+```
+
+
+
+**Check if docker is running**
+
+```bash
+ sudo docker run hello-world
+
+```
+
+
+
+**Starting and stopping docker:**
+
+```bash
+sudo service docker start
+
 ```
 
