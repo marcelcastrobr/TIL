@@ -2,7 +2,7 @@
 
 Today-I-Learned snippets. Inspired by [vidyabhandary](https://github.com/vidyabhandary), which was inspired by the post [Building a self-updating profile README for GitHub](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/) by [Simon Willison](https://github.com/simonw) 
 
-<!-- count starts -->8<!-- count ends --> TILs so far. 
+<!-- count starts -->9<!-- count ends --> TILs so far. 
 <!-- index starts -->
 ## scripts
 
@@ -17,6 +17,7 @@ Today-I-Learned snippets. Inspired by [vidyabhandary](https://github.com/vidyabh
 ## data-application
 
 * [Encoding and Decoding](https://github.com/marcelcastrobr/til/blob/main/data-application/encoding.md) - 2022-10-17
+* [Document Parsing using Grobid](https://github.com/marcelcastrobr/til/blob/main/data-application/doc_parsing.md) - 2024-08-20
 
 ## python
 
