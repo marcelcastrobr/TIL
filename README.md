@@ -2,7 +2,7 @@
 
 Today-I-Learned snippets. Inspired by [vidyabhandary](https://github.com/vidyabhandary), which was inspired by the post [Building a self-updating profile README for GitHub](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/) by [Simon Willison](https://github.com/simonw) 
 
-<!-- count starts -->7<!-- count ends --> TILs so far. 
+<!-- count starts -->8<!-- count ends --> TILs so far. 
 <!-- index starts -->
 ## scripts
 
@@ -21,7 +21,8 @@ Today-I-Learned snippets. Inspired by [vidyabhandary](https://github.com/vidyabh
 ## python
 
 * [PIPENV](https://github.com/marcelcastrobr/til/blob/main/python/pipenv.md) - 2022-11-25
-* [TIL  - Windows File System](https://github.com/marcelcastrobr/til/blob/main/python/wfs.md) - 2024-08-06
+* [Windows File System](https://github.com/marcelcastrobr/til/blob/main/python/wfs.md) - 2024-08-06
+* [Conda and Miniconda](https://github.com/marcelcastrobr/til/blob/main/python/conda.md) - 2024-08-14
 <!-- index ends -->
 
 ---
