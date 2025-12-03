@@ -2,8 +2,30 @@
 
 Today-I-Learned snippets. Inspired by [vidyabhandary](https://github.com/vidyabhandary), which was inspired by the post [Building a self-updating profile README for GitHub](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/) by [Simon Willison](https://github.com/simonw) 
 
-<!-- count starts -->11<!-- count ends --> TILs so far. 
+
+
+### Pre-requisites
+
+To reproduce this TIL you can install the requirements using uv.
+
+```python
+uv venv --python 3.11
+source .venv/bin/activate
+uv pip install -r requirements.txt
+
+  # The workflow remains the same:
+  # 1. Run python build_database.py to update the SQLite database with both .md and .ipynb files
+  # 2. Run python update_readme.py --rewrite to update the README.md
+  
+  python build_database.py
+  python update_readme.py
+```
+
+
+
+<!-- count starts -->12<!-- count ends --> TILs so far. 
 <!-- index starts -->
+
 ## scripts
 
 * [Mini scripts bat file](https://github.com/marcelcastrobr/til/blob/main/scripts/script_create_open_folders.md) - 2022-10-12
@@ -29,6 +51,10 @@ Today-I-Learned snippets. Inspired by [vidyabhandary](https://github.com/vidyabh
 ## snowflake
 
 * [snowcd - snowflake connectivity diagnostic tool](https://github.com/marcelcastrobr/til/blob/main/snowflake/snowcd.md) - 2025-02-14
+
+## notebooks
+
+* [One hot encodding Implementations](https://github.com/marcelcastrobr/til/blob/main/onehot.ipynb) - 2025-12-03
 <!-- index ends -->
 
 ---
